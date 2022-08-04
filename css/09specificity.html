@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+
+        .note {
+            background-color: red;
+            text-align: right;
+        }
+
+        .error {
+            text-align: center;
+        }
+
+        .note.error {
+            background-color: blue;
+        }
+
+        #head1 {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>specificity 명시도</h1>
+    <p>id 선택자 : 100점</p>
+    <p>class 선택자 : 10점</p>
+    <p>element 선택자 : 1점</p>
+    <p>점수가 같으면 아래 작성한게 적용됨</p>
+
+    <hr>
+    
+    <h1 id="head1" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Totam, doloribus provident?</h1>
+    <h1 class="note error">Dolore, sed praesentium.</h1>
+    <h1 class="note error">Exercitationem, cum tempore.</h1>
+    <h1 class="note error">Tempora, cum velit.</h1>
+</body>
+</html>
