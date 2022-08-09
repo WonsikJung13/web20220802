@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .container {
-            display: inline-flex;
+            display: flex;
             background-color: rgba(0, 0, 0, 0.847);
             color: white;
             font-weight: bold;
-            font-size: 25px;
-            height: 80px;
-            text-align: center;
-            line-height: 80px;
+            font-size: 20px;
+        }
+
+        .container>div {
+            padding: 20px 15px;
         }
 
         #menu:hover {
             background-color: black;
         }
 
-        #menu {
-            flex: 1;
-            padding-right: 50px;
-            padding-left: 50px;
+        .fa-solid:hover {
+            background-color: black;
         }
+
+        .ml-auto:hover {
+            background-color: black;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        
+
 
         /* #menu:active {
             background-color: green;
@@ -30,7 +41,7 @@
 </head>
 <body>
     <div class="container">
-    
+        <div><i class="fa-solid fa-house-chimney"></i></div>
         <div id="menu" class="menu1" onclick="location.href=''"style="cursor:pointer;">HTML</div>
         <div id="menu" class="menu2">CSS</div>
         <div id="menu" class="menu3">JAVASCRIPT</div>
@@ -39,14 +50,9 @@
         <div id="menu" class="menu6">PHP</div>
         <div id="menu" class="menu7">BOOTSTRAP</div>
         <div id="menu" class="menu8">HOW&nbsp;TO</div>
-        <div id="menu" class="menu9">W3.CSS</div>
-        <div id="menu" class="menu10">JAVA</div>
-        <div id="menu" class="menu11">JQUERY</div>
-        <div id="menu" class="menu12">C</div>
-        <div id="menu" class="menu13">C++</div>
-        <div id="menu" class="menu14">C#</div>
-        <div id="menu" class="menu15">R</div>
-        <div id="menu" class="menu16">React</div>
-</div>
+        <div class="ml-auto"><i class="fa-solid fa-circle-half-stroke"></i></div>
+        <div><i class="fa-solid fa-earth-asia"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
 </body>
 </html>
