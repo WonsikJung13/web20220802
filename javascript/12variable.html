@@ -16,9 +16,20 @@
         <div class="calculator">계산기</div><br>
         <input type="text" id="price" placeholder="물건가격" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"> <br>
         <input type="text" id="totalPrice" placeholder="최종가격" disabled>
-        <button type="button" onclick="calc()">입력</button>
+        <button type="button" id="submitBtn" onclick="calc()">입력</button>
         </div>
     </form>
+
+    <script>
+        let inputPrice = document.getElementById("price");
+    
+        inputPrice.addEventListener("keyup", function (event) {
+          if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("submitBtn").click();
+          }
+        });
+      </script>
 
     <script type="text/javascript">
 
@@ -47,6 +58,8 @@
 
         };
     </script>
+
+    
 </body>
 
 </html>
