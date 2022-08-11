@@ -17,22 +17,19 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script>
-        let first = prompt("mbti 첫 글자를 입력해주세요.");
 
-        switch (first) {
-            case "i":
-                console.log("내향적이군요.");
-                break;
+        let a = getDouble(3);
+        let b = getDouble(5);
+        let c = getDouble("hi");
 
-            case "e":
-                console.log("외향적이군요.");
-                break;
+        console.log(a); // 6
+        console.log(b); // 10
+        console.log(c); // "hihi"
 
-            default:
-                console.log("e 또는 i를 입력해주세요.");
-                document.getElementById()
-                break;
-        };
+        function getDouble(param) {
+            return (param + param);
+        }
+
     </script>
 </body>
 

@@ -17,22 +17,18 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script>
-        let first = prompt("mbti 첫 글자를 입력해주세요.");
+        function printDouble(f) {
+            console.log(f(1) + f(2));
+        }
 
-        switch (first) {
-            case "i":
-                console.log("내향적이군요.");
-                break;
+        printDouble(function (x) {
+            return "Hello!" + x;
+        });
 
-            case "e":
-                console.log("외향적이군요.");
-                break;
+        printDouble(function (x) {
+            return "Java!" + x;
+        });
 
-            default:
-                console.log("e 또는 i를 입력해주세요.");
-                document.getElementById()
-                break;
-        };
     </script>
 </body>
 

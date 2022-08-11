@@ -17,22 +17,20 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script>
-        let first = prompt("mbti 첫 글자를 입력해주세요.");
+        let scores = [90, 70, 100, 75, 80, 75, 80, 100];
 
-        switch (first) {
-            case "i":
-                console.log("내향적이군요.");
-                break;
-
-            case "e":
-                console.log("외향적이군요.");
-                break;
-
-            default:
-                console.log("e 또는 i를 입력해주세요.");
-                document.getElementById()
-                break;
+        let sum = 0;
+        for (let i=0; i<8; i++) {
+            if(scores[i] >= 80) {
+            sum = sum + scores[i]
+            } else {
+                console.log(scores[i]);
+            }
         };
+
+        console.log(sum);
+
+        
     </script>
 </body>
 
