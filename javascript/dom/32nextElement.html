@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, sapiente nostrum. Iusto iste est, nam
+        architecto ad cum totam quas labore quisquam. Maiores delectus voluptate placeat et laudantium laboriosam
+        deserunt.
+    </p>
+    <h1>
+        Qui.
+    </h1>
+    <p>
+        Vel error repellendus sunt reprehenderit reiciendis rerum quia, vero perferendis sed cupiditate aut assumenda
+        nostrum ipsam laborum autem ratione, tenetur ab, hic id nihil natus ipsum facere consequatur. Cumque, est!
+    </p>
+    <h1>
+        Aliquam?
+    </h1>
+    <p>
+        Minus voluptatum recusandae assumenda error alias facere fuga aspernatur necessitatibus magnam a molestiae
+        veniam nulla debitis cupiditate voluptatibus enim suscipit esse ducimus animi delectus officia, accusantium
+        nesciunt qui perferendis. Deleniti.
+    </p>
+    <h1>
+        Suscipit.
+    </h1>
+    <p>
+        Omnis exercitationem sunt illum odit impedit ratione deserunt distinctio est quia, pariatur officia veniam,
+        numquam obcaecati culpa vitae? Mollitia iure vitae accusantium optio, necessitatibus voluptatem laborum alias
+        numquam sunt adipisci.
+    </p>
+    <h1>
+        Vitae.
+    </h1>
+    <p>
+        Similique libero dicta animi nam molestias, aut quisquam aperiam exercitationem labore temporibus, inventore
+        officiis eum esse nisi debitis. Tempore totam quos odio alias amet officia? Nemo voluptatibus perspiciatis eos
+        recusandae.
+    </p>
+    <h1>
+        Aliquid.
+    </h1>
+    <p>
+        Eligendi nisi vel sed aut sequi et nesciunt adipisci? Recusandae cum consequuntur aut quae quisquam itaque
+        necessitatibus fuga harum libero, ullam nobis modi reiciendis ut. Consequuntur unde vel explicabo porro!
+    </p>
+    <h1>
+        Quibusdam.
+    </h1>
+    <p>
+        Quasi maxime debitis iste. Sunt, expedita veritatis laborum provident asperiores dicta molestias nulla veniam
+        eum quam eveniet adipisci. Incidunt et sunt placeat dolorum doloribus nobis exercitationem, eos perspiciatis
+        minima maxime.
+    </p>
+    <h1>
+        Blanditiis!
+    </h1>
+    <p>
+        Minima rerum veritatis vitae temporibus soluta adipisci, quaerat voluptates cupiditate consequuntur eaque dicta
+        maxime exercitationem explicabo illo odio dolorem rem ducimus similique. At assumenda amet earum dicta saepe
+        dignissimos atque!
+    </p>
+    <h1>
+        Explicabo?
+    </h1>
+    <p>
+        Quis facere cumque ratione suscipit, perspiciatis pariatur eaque officiis hic! Aliquid saepe consectetur
+        recusandae non eos iure rerum harum voluptates, voluptatem ipsa. Quisquam perferendis saepe aspernatur tenetur
+        delectus, beatae similique.
+    </p>
+    <h1>
+        Quisquam.
+    </h1>
+    <p>
+        Eveniet beatae perferendis cum soluta maxime! Sint mollitia consequuntur expedita, voluptatum recusandae
+        molestias autem neque eligendi ut suscipit quidem at corporis sed dignissimos nihil ipsam, maiores ipsa? Fugit,
+        quo natus.
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // document.querySelector("h1").addEventListener("click", function () {
+        //     document.querySelector("p").classList.toggle("d-none")
+        // });
+
+        let heads = document.querySelectorAll("h1");
+        for (let i = 0; i < heads.length; i++) {
+            heads[i].addEventListener("click", function () {
+                this.nextElementSibling.classList.toggle("d-none")
+            });
+        };
+
+    </script>
+</body>
+
+</html>
